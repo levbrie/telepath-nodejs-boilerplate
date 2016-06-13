@@ -21,7 +21,6 @@ Originally forked from [express-mongoose-es6-rest-api](https://github.com/KunalK
 
 ### Setup on Github
 
-
 We use hub to set up repos, but this requires making them private immediately after.
 
 ```zsh
@@ -113,7 +112,8 @@ git commit -m "chore(ghooks): Add pre-commit and commit-msg ghook"
 # install production dependencies only
 3. npm i --production
 
-# Use any process manager to start your services
+# Use any process manager to start your services - using pm2 with docker is
+# usually not the right way to go though
 4. pm2 start index.js
 ```
 
