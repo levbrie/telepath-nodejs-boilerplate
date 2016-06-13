@@ -1,13 +1,13 @@
 {
-  "name": "express-mongoose-es6-rest-api",
+  "name": "nodejs-boilerplate",
   "version": "1.0.0",
   "description": "A Boilerplate application for building REST APIs using express, mongoose in ES6 with code coverage",
-  "author": "Kunal Kapadia <kunalkapadia12@gmail.com>",
+  "author": "Lev Brie <lev@telepath.io>",
   "main": "index.js",
   "private": false,
   "engines": {
-    "node": "4.4.x",
-    "npm": "3.9.x"
+    "node": "6.1.x",
+    "npm": "3.8.x"
   },
   "scripts": {
     "start": "gulp serve",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KunalKapadia/express-mongoose-es6-rest-api.git"
+    "url": "git@github.com:leviathantech/nodejs-boilerplate.git"
   },
   "keywords": [
     "express",
@@ -51,6 +51,7 @@
     "method-override": "^2.3.5",
     "mongoose": "^4.3.7",
     "morgan": "~1.6.1",
+    "sqlite3": "^3.1.4",
     "winston": "^2.1.1"
   },
   "devDependencies": {

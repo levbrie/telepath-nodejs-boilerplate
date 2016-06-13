@@ -1,11 +1,7 @@
 {
 	"rules": {
 		"indent": [
-			2,
-			"tab",
-			{
-				"SwitchCase": 1
-			}
+			2
 		],
 		"space-before-function-paren": [
 			2,
