@@ -1,20 +1,35 @@
-# Express & mongoose REST API Boilerplate in ES6 with Code Coverage [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Node.js Boilerplate for Telepath Servers
 
-[![Build Status](https://img.shields.io/travis/KunalKapadia/express-mongoose-es6-rest-api/master.svg?style=flat-square)](https://travis-ci.org/KunalKapadia/express-mongoose-es6-rest-api)
-[![Coverage Status](https://img.shields.io/coveralls/KunalKapadia/express-mongoose-es6-rest-api/master.svg?style=flat-square)](https://coveralls.io/github/KunalKapadia/express-mongoose-es6-rest-api?branch=master)
-[![Code Climate](https://img.shields.io/codeclimate/github/KunalKapadia/express-mongoose-es6-rest-api.svg?style=flat-square)](https://codeclimate.com/github/KunalKapadia/express-mongoose-es6-rest-api)
-[![bitHound Overall Score](https://www.bithound.io/github/KunalKapadia/express-es6-rest-api-starter/badges/score.svg)](https://www.bithound.io/github/KunalKapadia/express-es6-rest-api-starter)
-[![bitHound Dependencies](https://www.bithound.io/github/KunalKapadia/express-mongoose-es6-rest-api/badges/dependencies.svg)](https://www.bithound.io/github/KunalKapadia/express-mongoose-es6-rest-api/master/dependencies/npm)
+Built on express and mongoose with a REST API using ES6 with Code Coverage.
+
+@TODO: Get rid of all the stuff from the old repo that's in here.
+
+[![Build Status](https://img.shields.io/travis/leviathantech/nodejs-boilerplate/master.svg?style=flat-square)](https://travis-ci.org/leviathantech/nodejs-boilerplate)
+[![Coverage Status](https://img.shields.io/coveralls/leviathantech/nodejs-boilerplate/master.svg?style=flat-square)](https://coveralls.io/github/leviathantech/nodejs-boilerplate?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/github/leviathantech/nodejs-boilerplate.svg?style=flat-square)](https://codeclimate.com/github/leviathantech/nodejs-boilerplate)
+[![bitHound Overall Score](https://www.bithound.io/github/leviathantech/express-es6-rest-api-starter/badges/score.svg)](https://www.bithound.io/github/leviathantech/express-es6-rest-api-starter)
+[![bitHound Dependencies](https://www.bithound.io/github/leviathantech/nodejs-boilerplate/badges/dependencies.svg)](https://www.bithound.io/github/leviathantech/nodejs-boilerplate/master/dependencies/npm)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-[![MIT License](https://img.shields.io/npm/l/stack-overflow-copy-paste.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-# [![Express ES6 REST API Starter](https://cloud.githubusercontent.com/assets/4172932/12660610/90f5b856-c63a-11e5-878e-c9f0bbf33090.jpg)](https://github.com/KunalKapadia/express-es6-rest-api-starter)
+# [![Express ES6 REST API Starter](https://cloud.githubusercontent.com/assets/4172932/12660610/90f5b856-c63a-11e5-878e-c9f0bbf33090.jpg)](https://github.com/leviathantech/nodejs-boilerplate)
 
 ## Overview
 
-This is a boilerplate application for building REST APIs in Node.js using ES6 and Express with Code Coverage. Helps you stay productive by following best practices. Follows [Airbnb's Javascript style guide](https://github.com/airbnb/javascript).
+This is a boilerplate application for building REST APIs in Node.js using ES6 and Express with Code Coverage. Helps you stay productive by following best practices. Original fork follows [Airbnb's Javascript style guide](https://github.com/airbnb/javascript), which we deviate from slightly.
 
-Heavily inspired from [Egghead.io - How to Write an Open Source JavaScript Library](https://egghead.io/series/how-to-write-an-open-source-javascript-library).
+Originally forked from [express-mongoose-es6-rest-api](https://github.com/KunalKapadia/express-mongoose-es6-rest-api).
+
+### Setup on Github
+
+
+We use hub to set up repos, but this requires making them private immediately after.
+
+```zsh
+$ hub init
+$ hub add . && hub commit -m "initial commit"
+$ hub create optional_org_name/repo_name -d "description of repo"
+$ hub push origin master
+```
 
 ### Features
 
@@ -35,8 +50,8 @@ Heavily inspired from [Egghead.io - How to Write an Open Source JavaScript Libra
 
 Clone the repo:
 ```sh
-git clone git@github.com:KunalKapadia/express-mongoose-es6-rest-api.git
-cd express-mongoose-es6-rest-api
+git clone git@github.com:leviathantech/nodejs-boilerplate.git
+cd nodejs-boilerplate
 ```
 
 Install dependencies:
@@ -47,7 +62,7 @@ npm install
 Start server:
 ```sh
 # set DEBUG env variable to get debug logs
-DEBUG=express-mongoose-es6-rest-api:* npm start
+DEBUG=nodejs-boilerplate:* npm start
 # OR
 # requires gulp to be installed globally
 npm i -g gulp
