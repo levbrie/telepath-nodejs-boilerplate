@@ -84,16 +84,6 @@ gulp.task('nodemon', ['lint', 'copy', 'babel'], () =>
   })
 );
 
-// Start server with restart on file changes
-gulp.task('slackbot', ['lint', 'copy', 'babel'], () =>
-  plugins.nodemon({
-    script: path.join('dist', 'slackbot.js'),
-    ext: 'js',
-    ignore: ['node_modules/**/*.js', 'dist/**/*.js'],
-    tasks: ['lint', 'copy', 'babel']
-  })
-);
-
 // covers files for code coverage
 gulp.task('pre-test', () =>
   gulp.src([...paths.js, '!gulpfile.babel.js'])
@@ -156,7 +146,6 @@ gulp.task('mocha', ['clean'], () => {
 
 // gulp serve for development
 gulp.task('serve', ['clean'], () => runSequence('nodemon'));
-gulp.task('slack', ['clean'], () => runSequence('slackbot'));
 
 
 // default task: clean dist, compile js files and copy non-js files.
